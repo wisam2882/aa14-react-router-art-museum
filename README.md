@@ -177,4 +177,3 @@ Setup is complete! You're ready for Phase 1!
 [Harvard Art Museum API]: https://www.harvardartmuseums.org/collections/api
 [`ReactDOM.createRoot`]: https://react.dev/reference/react-dom/client/createRoot
 [`createBrowserRouter`]: https://reactrouter.com/en/main/routers/create-browser-router
-# aa14-react-router-art-museum
