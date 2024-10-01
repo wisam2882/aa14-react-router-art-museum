@@ -5,7 +5,7 @@ const GalleryView = ({galleries})=>{
     const {galleryId} = useParams()
     // console.log(galleryId)
     const gallery = galleries.find((g)=> g.id == parseInt(galleryId))
-    // console.log(gallery)
+    console.log(gallery)
     if(!gallery){
         return <Navigate to="/"></Navigate>
     }
