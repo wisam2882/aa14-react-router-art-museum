@@ -1,8 +1,6 @@
-import React from `react`;
 
-
-
-const GalleryNavigation = () => {
+const GalleryNavigation = ({galleries}) => {
+    console.log(galleries)
     return (
         <nav>
             <h1>Galleries</h1>
