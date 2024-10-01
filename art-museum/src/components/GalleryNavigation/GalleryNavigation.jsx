@@ -11,7 +11,7 @@ const GalleryNavigation = ({galleries}) => {
             <ul>
             {
                 galleries.map((gallery) =>(
-                    <li key='galleryNames'>
+                    <li key={gallery.id}>
                     <NavLink key={gallery.id} to={`/galleries/${gallery.id}`}>
                         {gallery.name}
                     </NavLink>

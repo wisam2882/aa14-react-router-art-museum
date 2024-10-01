@@ -1,16 +1,27 @@
-import { Navigate, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 
 const ArtImageTile = ({art})=>{
-    const {artId} = useParams()
-    const artImage = art.find((a)=> a.id == parseInt(artId))
 
-
-
+// const image = art.images[0]
+    console.log(art)
+const image = art.images[0]
+if(!image && art.title == "Three-handled Loving Cup"){ return (
+    <div>
+    <p>Title: {art.title}</p>
+    <img src="https://ids.hvrd.art/ids/view/20682387?width=256&height=256" alt={art.title} height={50}/>
+    </div>
+)}
     return (
-        <h1>hello</h1>
+        <div>
+        <p>Title: {art.title}</p>
+        <Link to={`art/${art.id}`}>
+        <img src={image.baseimageurl} alt={art.title} height={50}/>
+        </Link> 
+        </div>
     )
 }
 
 export default ArtImageTile
+
